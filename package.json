@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 5000",
-    "project": "concurrently \"npm run server\" \"npm run dev\""
+    "project": "concurrently \"npm run server\" \"npm run dev\"",
+    "project_deploy": "concurrently \"npm run server\" \"npm run build\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
